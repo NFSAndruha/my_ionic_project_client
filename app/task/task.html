@@ -1,0 +1,14 @@
+<ion-header-bar class="bar bar-header">
+  <button class="button button-clear button-positive icon ion-grid"
+          ng-click="goToDashboard()"></button>
+  <h1 class="h1 title">{{ task.title }}</h1>
+  <button class="button button-clear button-positive icon ion-trash-b"
+          ng-click="removeTask(task)"></button>
+</ion-header-bar>
+<ion-content>
+  <div class="card">
+    <div class="item item-text-wrap">
+      {{ task.description }}
+    </div>
+  </div>
+</ion-content>
